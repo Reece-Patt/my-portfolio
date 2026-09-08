@@ -7,32 +7,136 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Reece Patterson</h1>
-        <p>Freshman at GCSU | MIS Major | Learning Web Development</p>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Reece Ptterson</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Freshman at GCSU | MIS Major | Aspiring Business Analytics & AI Professional</p>
+            <a href="#about" class="cta-button">Learn More About Me</a>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am an academically driven Honors Scholar at Georgia College & State University majoring in Management Information Systems (MIS). My academic focus sits at the intersection of enterprise technology, data analytics, and the commercial applications of artificial intelligence and machine learning.
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>      I am an academically driven Honors Scholar at Georgia College & State University majoring in Management Information Systems (MIS). My academic focus sits at the intersection of enterprise technology, data analytics, and the commercial applications of artificial intelligence and machine learning.
       Looking ahead, I am highly interested in pursuing advanced graduate studies in Business Analytics, with the goal of leveraging technical data structures and machine learning frameworks to optimize business operations.
       Beyond academic rigor, my background as a varsity athlete and Georgia DECA state competitor has instilled in me a deep discipline, competitive work ethic, and strong baseline in strategic presentation.
       Core Technical Focus Areas: Enterprise Information Systems, Business Analytics Data Modeling, Applied AI/ML Frameworks.</p>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Currently Learning</h3>
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>Web APIs</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Platforms</h3>
+                    <ul>
+                        <li>linkedin</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: reece.patterson@bobcats.gcsu.edu</p>
+    <section id="projects" class="section alt-bg">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Personal Portfolio</h3>
+                    <p>A responsive starter portfolio website to showcase my work and skills, and what I have learned. Built with HTML, CSS, and JavaScript.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>School Project</h3>
+                    <p>Add a school project here! (Update this when you complete assignments)</p>
+                    <div class="project-tags">
+                        <span class="tag">Coming Soon</span>
+                    </div>
+                    <a href="#" class="project-link">Coming Soon</a>
+                </div>
+                <div class="project-card">
+                    <h3>Personal Project</h3>
+                    <p>Add a personal project here! (Todo app, game, calculator, etc.)</p>
+                    <div class="project-tags">
+                        <span class="tag">Coming Soon</span>
+                    </div>
+                    <a href="#" class="project-link">Coming Soon</a>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Georgia College & State University</h3>
+                <p class="degree">Bachelor of Science in Management Information Systems</p>
+                <p class="date">Class of 2030</p>
+                <p>Freshman | GPA: [NA]</p>
+            </div>
+            <div class="education-item">
+                <h3>Relevant Coursework</h3>
+                <ul>
+                    <li>Principles of Information Systems</li>
+                    <li>MIS Seminar</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section alt-bg">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to new opportunities and learning experiences. If I don't know something, I will for sure research and find out. Feel free to reach out!</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:reece.patterson@bobcats.gcsu.edu">reece.patterson@bobcats.gcsu.edu</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Reece-Patt" target="_blank">github.com/Reece-Patt</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/reece-patterson-84124337a/" target="_blank">https://www.linkedin.com/in/reece-patterson-84124337a/</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Reece Patterson. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
