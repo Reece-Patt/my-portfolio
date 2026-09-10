@@ -3,57 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Reece Patterson - MIS Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" title="Toggle dark mode">
+        <span class="toggle-icon">🌙</span>
+    </button>
+
+    <!-- Animated Background Particles -->
+    <div class="particles-container"></div>
+
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Reece Patterson</div>
+            <div class="logo">
+                <span class="logo-accent">RP</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
+                <li><a href="#involvement">Leadership</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <header class="hero">
-        <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Freshman at GCSU | MIS Major | Aspiring Business Analytics & AI Professional</p>
-            <a href="#about" class="cta-button">Learn More About Me</a>
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="word">Welcome</span>
+                    <span class="word">to</span>
+                    <span class="word">My</span>
+                    <span class="word">Portfolio</span>
+                </h1>
+                <p class="hero-subtitle">Freshman at GCSU | MIS Major | Business + Technology Innovator</p>
+                <a href="#about" class="cta-button">Explore My Journey</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="3">0</span>
+                    <p>Languages</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="6">0</span>
+                    <p>Tools</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="4">0</span>
+                    <p>Projects</p>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="section">
+    <section id="about" class="section glass-effect">
         <div class="container">
-            <h2>About Me</h2>
-            <p>      I am an academically driven Honors Scholar at Georgia College & State University majoring in Management Information Systems (MIS). My academic focus sits at the intersection of enterprise technology, data analytics, and the commercial applications of artificial intelligence and machine learning.
-      Looking ahead, I am highly interested in pursuing advanced graduate studies in Business Analytics, with the goal of leveraging technical data structures and machine learning frameworks to optimize business operations.
-      Beyond academic rigor, my background as a varsity athlete and Georgia DECA state competitor has instilled in me a deep discipline, competitive work ethic, and strong baseline in strategic presentation.
-      Core Technical Focus Areas: Enterprise Information Systems, Business Analytics Data Modeling, Applied AI/ML Frameworks.</p>
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="header-underline"></div>
+            </div>
+            <div class="about-content glass-card">
+                <p>Hi! I'm a freshman at Georgia College & State University majoring in Management Information Systems. I'm passionate about bridging the gap between technology and business strategy. My goal is to understand both the technical and business sides of MIS—to speak both languages fluently and make data-driven decisions that create real impact.</p>
+                <p>I'm interested in Enterprise Information Systems, Business Analytics & Data Modeling, and Applied AI/ML Frameworks. I believe the future belongs to professionals who can translate complex technical concepts into business value.</p>
+            </div>
         </div>
     </section>
 
-<section id="skills" class="section">
+    <section id="skills" class="section alt-bg">
         <div class="container">
-            <h2>Skills & Expertise</h2>
+            <div class="section-header">
+                <h2>Skills & Expertise</h2>
+                <div class="header-underline"></div>
+            </div>
             
             <div class="skills-category">
                 <h3>Technical Skills</h3>
                 <div class="skills-grid">
-                    <div class="skill-card">
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon">💻</div>
                         <h4>Programming Languages</h4>
                         <ul>
                             <li>JavaScript (Graphics, DOM manipulation)</li>
                             <li>HTML5 & CSS3 (Web development fundamentals)</li>
                             <li>AP Computer Science Principles</li>
                         </ul>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 70%"></div>
+                        </div>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon">📊</div>
                         <h4>Business & Data Analytics</h4>
                         <ul>
                             <li>Data Analysis & Interpretation</li>
@@ -61,8 +107,12 @@
                             <li>Statistics (AP Statistics)</li>
                             <li>Excel (Learning & Development)</li>
                         </ul>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 65%"></div>
+                        </div>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon">🎨</div>
                         <h4>Design & Presentation</h4>
                         <ul>
                             <li>Graphic Design (Canva)</li>
@@ -70,6 +120,9 @@
                             <li>Professional Presentations</li>
                             <li>Visual Communication</li>
                         </ul>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -77,18 +130,18 @@
             <div class="skills-category">
                 <h3>Tools & Platforms</h3>
                 <div class="tools-grid">
-                    <div class="tool-tag">Microsoft Excel</div>
-                    <div class="tool-tag">Canva</div>
-                    <div class="tool-tag">Roblox Studio</div>
-                    <div class="tool-tag">CodeHS</div>
-                    <div class="tool-tag">GitHub</div>
-                    <div class="tool-tag">VS Code</div>
+                    <div class="tool-tag glass-card">Microsoft Excel</div>
+                    <div class="tool-tag glass-card">Canva</div>
+                    <div class="tool-tag glass-card">Roblox Studio</div>
+                    <div class="tool-tag glass-card">CodeHS</div>
+                    <div class="tool-tag glass-card">GitHub</div>
+                    <div class="tool-tag glass-card">VS Code</div>
                 </div>
             </div>
 
             <div class="skills-category">
                 <h3>Core Competencies</h3>
-                <div class="competencies">
+                <div class="competencies glass-card">
                     <p>🎯 <strong>Business Acumen:</strong> Understanding how technology drives business value and making data-informed decisions</p>
                     <p>💻 <strong>Technical Literacy:</strong> Reading, understanding, and working with code; bridging business and technology languages</p>
                     <p>📊 <strong>Data-Driven Thinking:</strong> Analyzing data to solve business problems and present insights</p>
@@ -97,11 +150,16 @@
             </div>
         </div>
     </section>
-<section id="projects" class="section alt-bg">
+
+    <section id="projects" class="section glass-effect">
         <div class="container">
-            <h2>Projects</h2>
+            <div class="section-header">
+                <h2>Projects</h2>
+                <div class="header-underline"></div>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card glass-card">
+                    <div class="project-badge">Featured</div>
                     <h3>JavaScript Graphics Project (AP CSP)</h3>
                     <p>Collaborative project for AP Computer Science Principles exam. Created interactive graphics using JavaScript in CodeHS environment.</p>
                     <div class="project-tags">
@@ -111,7 +169,8 @@
                     </div>
                     <a href="https://codehs.com/sandbox/limelemur7897/random" target="_blank" class="project-link">View Project →</a>
                 </div>
-                <div class="project-card">
+                <div class="project-card glass-card">
+                    <div class="project-badge">Featured</div>
                     <h3>Mock AP CSP Graphics Project</h3>
                     <p>Mock exam project demonstrating proficiency with JavaScript graphics programming. Practice for formal AP Computer Science Principles assessment.</p>
                     <div class="project-tags">
@@ -121,17 +180,19 @@
                     </div>
                     <a href="https://codehs.com/sandbox/yellowtrout5196/javascript-graphics?collaborate=-OjWAhDVZhPrzDAEfGSf" target="_blank" class="project-link">View Project →</a>
                 </div>
-                <div class="project-card">
+                <div class="project-card glass-card">
+                    <div class="project-badge">Current</div>
                     <h3>Personal Portfolio Website</h3>
-                    <p>Responsive portfolio website built with HTML5, CSS3, and JavaScript. Enhanced with GitHub Copilot. Showcases skills, projects, and experience as a freshman MIS major.</p>
+                    <p>Responsive portfolio website built with HTML5, CSS3, and JavaScript. Showcases skills, projects, and experience as a freshman MIS major.</p>
                     <div class="project-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
                         <span class="tag">JavaScript</span>
                     </div>
-                    <a href="https://reece-patt.github.io/my-portfolio/" target="_blank" class="project-link">View Project →</a>
+                    <a href="https://github.com/yourusername/portfolio" target="_blank" class="project-link">View Project →</a>
                 </div>
-                <div class="project-card">
+                <div class="project-card glass-card">
+                    <div class="project-badge">In Progress</div>
                     <h3>Roblox Game Development</h3>
                     <p>Personal project exploring game development and 3D environment creation using Roblox Studio. Learning scripting and game mechanics.</p>
                     <div class="project-tags">
@@ -145,71 +206,26 @@
         </div>
     </section>
 
-   <section id="education" class="section">
+    <section id="focus-areas" class="section alt-bg">
         <div class="container">
-            <h2>Education & Certifications</h2>
-            <div class="education-item">
-                <h3>Georgia College & State University</h3>
-                <p class="degree">Bachelor of Business & Technology in Management Information Systems</p>
-                <p class="date">Class of 2030</p>
-                <p>Honors College Member | Leadership Academy</p>
+            <div class="section-header">
+                <h2>Technical Focus Areas</h2>
+                <div class="header-underline"></div>
             </div>
-            <div class="education-item">
-                <h3>Certifications</h3>
-                <div class="cert-card">
-                    <strong>LinkedIn: Introduction to Artificial Intelligence</strong>
-                    <p class="cert-skills">Skills: AI Literacy, Artificial Intelligence</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<section id="involvement" class="section alt-bg">
-        <div class="container">
-            <h2>Campus Involvement & Leadership</h2>
-            <div class="involvement-grid">
-                <div class="involvement-card">
-                    <h3>🎓 John E. Sallstrom Honors College</h3>
-                    <p>Selective honors program for high-achieving students committed to academic excellence</p>
-                </div>
-                <div class="involvement-card">
-                    <h3>👥 Leadership Academy</h3>
-                    <p>Developing leadership skills and professional growth through structured programs</p>
-                </div>
-                <div class="involvement-card">
-                    <h3>💼 MIS Explore</h3>
-                    <p>Exploring career paths and professional opportunities in Management Information Systems</p>
-                </div>
-                <div class="involvement-card">
-                    <h3>⛪ Baptist College Ministry (BCM)</h3>
-                    <p>Christian community and leadership development through campus ministry</p>
-                </div>
-                <div class="involvement-card">
-                    <h3>🏓 Pickleball</h3>
-                    <p>Intermural sports participation and team building</p>
-                </div>
-                <div class="involvement-card">
-                    <h3>🏈 Flag Football</h3>
-                    <p>Intermural sports participation and physical fitness</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="focus-areas" class="section">
-        <div class="container">
-            <h2>Technical Focus Areas</h2>
             <p class="section-intro">As I progress through my MIS degree, I'm focusing on:</p>
             <div class="focus-grid">
-                <div class="focus-card">
+                <div class="focus-card glass-card">
+                    <div class="focus-icon">🏢</div>
                     <h3>Enterprise Information Systems</h3>
                     <p>Understanding large-scale business systems, ERP platforms, and enterprise solutions that drive organizational success.</p>
                 </div>
-                <div class="focus-card">
+                <div class="focus-card glass-card">
+                    <div class="focus-icon">📈</div>
                     <h3>Business Analytics & Data Modeling</h3>
                     <p>Leveraging data to drive business decisions through analytics, data visualization, and intelligent data modeling.</p>
                 </div>
-                <div class="focus-card">
+                <div class="focus-card glass-card">
+                    <div class="focus-icon">🤖</div>
                     <h3>Applied AI/ML Frameworks</h3>
                     <p>Applying artificial intelligence and machine learning to real-world business problems and creating intelligent solutions.</p>
                 </div>
@@ -217,24 +233,96 @@
         </div>
     </section>
 
-    <section id="interests" class="section alt-bg">
+    <section id="involvement" class="section glass-effect">
         <div class="container">
-            <h2>Personal Interests</h2>
+            <div class="section-header">
+                <h2>Campus Involvement & Leadership</h2>
+                <div class="header-underline"></div>
+            </div>
+            <div class="involvement-grid">
+                <div class="involvement-card glass-card">
+                    <h3>🎓 John E. Sallstrom Honors College</h3>
+                    <p>Selective honors program for high-achieving students committed to academic excellence</p>
+                </div>
+                <div class="involvement-card glass-card">
+                    <h3>👥 Leadership Academy</h3>
+                    <p>Developing leadership skills and professional growth through structured programs</p>
+                </div>
+                <div class="involvement-card glass-card">
+                    <h3>💼 MIS Explore</h3>
+                    <p>Exploring career paths and professional opportunities in Management Information Systems</p>
+                </div>
+                <div class="involvement-card glass-card">
+                    <h3>⛪ Baptist College Ministry (BCM)</h3>
+                    <p>Spiritual community and leadership development through campus ministry</p>
+                </div>
+                <div class="involvement-card glass-card">
+                    <h3>🏓 Pickleball Club</h3>
+                    <p>Intermural sports participation and team building</p>
+                </div>
+                <div class="involvement-card glass-card">
+                    <h3>🏈 Flag Football</h3>
+                    <p>Intermural sports participation and physical fitness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education & Certifications</h2>
+                <div class="header-underline"></div>
+            </div>
+            <div class="education-item glass-card">
+                <h3>Georgia College & State University</h3>
+                <p class="degree">Bachelor of Science in Management Information Systems</p>
+                <p class="date">Class of 2030</p>
+                <p>Honors College Member | Leadership Academy</p>
+            </div>
+            <div class="education-item glass-card">
+                <h3>Certifications & Achievements</h3>
+                <div class="cert-card">
+                    <strong>LinkedIn: Introduction to Artificial Intelligence</strong>
+                    <p class="cert-skills">Skills: AI Literacy, Artificial Intelligence</p>
+                </div>
+                <div class="cert-card">
+                    <strong>AP Computer Science Principles</strong>
+                    <p class="cert-skills">JavaScript Graphics Programming</p>
+                </div>
+                <div class="cert-card">
+                    <strong>AP Statistics</strong>
+                    <p class="cert-skills">Data Analysis & Interpretation</p>
+                </div>
+                <div class="cert-card">
+                    <strong>AP Precalculus</strong>
+                    <p class="cert-skills">Advanced Mathematics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interests" class="section glass-effect">
+        <div class="container">
+            <div class="section-header">
+                <h2>Personal Interests</h2>
+                <div class="header-underline"></div>
+            </div>
             <div class="interests-container">
-                <div class="interests-column">
+                <div class="interests-column glass-card">
                     <h3>Activities & Sports</h3>
                     <ul class="interests-list">
-                        <li>🥾 Hiking & Walking</li>
+                        <li>⚽ Sports (Flag Football, Pickleball)</li>
                         <li>🏋️ Fitness & Working Out</li>
                         <li>🎮 Video Games</li>
-                        <li>🏊 Swimming</li>
+                        <li>🥾 Hiking & Walking</li>
                     </ul>
                 </div>
-                <div class="interests-column">
+                <div class="interests-column glass-card">
                     <h3>Passions</h3>
                     <ul class="interests-list">
                         <li>🌍 Traveling & Exploring</li>
-                        <li>⚽ All Things Sports</li>
+                        <li>🏊 Swimming</li>
                         <li>💡 Personal Projects & Building</li>
                         <li>🚀 Continuous Learning</li>
                     </ul>
@@ -243,14 +331,17 @@
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section alt-bg">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <p>I'm always open to new opportunities, collaborations, and learning experiences. Feel free to reach out!</p>
-            <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:reece.patterson@bobcats.gcsu.edu">reece.patterson@bobcats.gcsu.edu</a></p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/Reece-Patt" target="_blank">github.com/Reece-Patt</a></p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/reece-patterson-84124337a/" target="_blank">https://www.linkedin.com/in/reece-patterson-84124337a/</a></p>
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="header-underline"></div>
+            </div>
+            <p class="section-intro">I'm always open to new opportunities, collaborations, and learning experiences. Feel free to reach out!</p>
+            <div class="contact-info glass-card">
+                <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
             </div>
         </div>
     </section>
@@ -258,10 +349,6 @@
     <footer>
         <p>&copy; 2026 Reece Patterson. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
 
     <script src="script.js"></script>
 </body>
