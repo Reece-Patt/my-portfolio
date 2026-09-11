@@ -25,35 +25,6 @@ window.addEventListener('scroll', () => {
     document.querySelector('.scroll-progress').style.width = scrollPercent + '%';
 });
 
-// Animated Counter for Stats
-function animateCounter(element, target) {
-    let current = 0;
-    const increment = target / 50;
-    const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-            element.textContent = target;
-            clearInterval(timer);
-        } else {
-            element.textContent = Math.floor(current);
-        }
-    }, 40);
-}
-
-// Intersection Observer for Counters
-const counters = document.querySelectorAll('.stat-number');
-const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting && !entry.target.dataset.animated) {
-            const target = parseInt(entry.target.getAttribute('data-target'));
-            animateCounter(entry.target, target);
-            entry.target.dataset.animated = 'true';
-        }
-    });
-}, { threshold: 0.5 });
-
-counters.forEach(counter => counterObserver.observe(counter));
-
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -142,10 +113,4 @@ window.addEventListener('scroll', () => {
         const scrollPosition = window.scrollY;
         hero.style.backgroundPosition = `0 ${scrollPosition * 0.5}px`;
     }
-});
-
-// Add stagger to nav links on scroll
-const navLinks = document.querySelectorAll('.nav-links a');
-navLinks.forEach((link, index) => {
-    link.style.setProperty('--stagger', index);
 });
